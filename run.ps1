@@ -1,0 +1,1 @@
+$u='powerlanguage.co.uk/wordle/';$w=iwr $u;$j=($w).Scripts.src[-1];$s=iwr ($u+$j);$p='(?<=(var La=\[))(\w|\n|\r|[",])+?(?=(\]))';$a=([regex]::Matches($s,$p).value).split(',');$d=Date '6/19/2021';$d=(New-TimeSpan $d (Date)).Days;$t=($a[$d]);$t
